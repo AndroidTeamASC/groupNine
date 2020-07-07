@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_api_flutter_project/fragment/Detail.dart';
 import "fragment/Save.dart";
 import "fragment/Home.dart";
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: BottomNavigation(),
+      routes: {Detail.detailRoute: (context) => Detail()},
     );
   }
 }
