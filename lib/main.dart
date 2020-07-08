@@ -42,8 +42,15 @@ class _BottonNavState extends State<BottomNavigation> {
         //key: _bottomkey,
         currentIndex: index,
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("")),
-          BottomNavigationBarItem(icon: Icon(Icons.work), title: Text("")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text(
+                "",
+                style: TextStyle(fontSize: 0),
+              )),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.work),
+              title: Text("", style: TextStyle(fontSize: 0))),
         ],
         selectedItemColor: Colors.blue,
         onTap: tapped,
