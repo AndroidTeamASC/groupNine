@@ -77,6 +77,12 @@ class _HomeSate extends State<Home> {
                                 itemCount: _topratedNews.articles.length,
                                 itemBuilder: (context, index) {
                                   return InkWell(
+                                    onTap: () {
+                                      Navigator.pushNamed(
+                                          context, Detail.detailRoute,
+                                          arguments:
+                                              _topratedNews.articles[index]);
+                                    },
                                     borderRadius: BorderRadius.circular(10),
                                     child: Container(
                                       margin: EdgeInsets.all(2),
